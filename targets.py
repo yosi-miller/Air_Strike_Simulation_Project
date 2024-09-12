@@ -47,3 +47,5 @@ class Targets:
 if __name__ == '__main__':
     iran = Targets('IR', 35.6892523, 51.3896004, 5)
     print(iran.distance)
+
+
