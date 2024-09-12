@@ -1,0 +1,62 @@
+[
+    {
+      "City": "Tehran",
+      "Priority": 5
+    },
+    {
+      "City": "Baghdad",
+      "Priority": 5
+    },
+    {
+      "City": "Damascus",
+      "Priority": 5
+    },
+    {
+      "City": "Kabul",
+      "Priority": 4
+    },
+    {
+      "City": "Sanaa",
+      "Priority": 4
+    },
+    {
+      "City": "Riyadh",
+      "Priority": 4
+    },
+    {
+      "City": "Cairo",
+      "Priority": 3
+    },
+    {
+      "City": "Beirut",
+      "Priority": 3
+    },
+    {
+      "City": "Amman",
+      "Priority": 3
+    },
+    {
+      "City": "Tripoli",
+      "Priority": 2
+    },
+    {
+      "City": "Khartoum",
+      "Priority": 2
+    },
+    {
+      "City": "Mosul",
+      "Priority": 2
+    },
+    {
+      "City": "Fallujah",
+      "Priority": 1
+    },
+    {
+      "City": "Kandahar",
+      "Priority": 1
+    },
+    {
+      "City": "Marrakesh",
+      "Priority": 1
+    }
+  ]

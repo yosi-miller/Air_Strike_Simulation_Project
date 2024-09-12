@@ -1,5 +1,5 @@
 import math
-
+from weather_api import read_weather
 
 class Targets:
     """
@@ -13,7 +13,9 @@ class Targets:
         self.__lat = lat
         self.__lon = lon
         self.__priority = priority
+        self.__weather = read_weather(self.__target_city)
         self.__distance = self.haversine_distance()
+        self.__weather_rank = self.weather_score(self.weather)
 
     def haversine_distance(self):
         """
@@ -39,10 +41,33 @@ class Targets:
         distance = r * c
         return distance
 
+    def weather_score(self, weather):
+        if weather["main"] == "Clear":
+            return 1.0
+        elif weather["main"] == "Clouds":
+            return 0.7
+        elif weather["main"] == "Rain":
+            return 0.4
+        elif weather["main"] == "Stormy":
+            return 0.2
+        else:
+            return 0
+
     @property
     def distance(self):
         return self.__distance
 
+    @property
+    def city(self):
+        return self.__target_city
+
+    @property
+    def weather(self):
+        return self.__weather
+
+    @property
+    def weather_rank(self):
+        return self.__weather_rank
 
 if __name__ == '__main__':
     iran = Targets('IR', 35.6892523, 51.3896004, 5)

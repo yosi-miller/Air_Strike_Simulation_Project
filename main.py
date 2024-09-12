@@ -1,3 +1,9 @@
+from models.aircraft import Aircraft
+from models.pilots import Pilot
+from models.targets import Targets
+from files_actions import read_json
+from weather_api import read_location
+
 def main_menu():
     """
     this function is used to display the main menu for the air strike simulation
@@ -23,6 +29,13 @@ def main_menu():
                 break
     return
 
+# create targets instance
+# all_targets = [Targets(x['City'], *read_location(x['City']), x['Priority']) for x in read_json('filses/targets.json')]
+all_aircraft = [Aircraft(x['type'], x['speed'], x['fuel_capacity']) for x in read_json('filses/aircrafts.json')]
+all_pilots = [Pilot(x['name'], x['skill_level']) for x in read_json('filses/pilots.json')]
 
 if __name__ == '__main__':
-    main_menu()
+    # main_menu()
+    # print([[x.distance, x.city, x.weather, x.weather_rank] for x in all_targets])
+    for f in  all_pilots:
+        print(f)

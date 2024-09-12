@@ -1,0 +1,37 @@
+ [
+    {
+      "type": "F-16",
+      "speed": 2400,
+      "fuel_capacity": 5000
+    },
+    {
+      "type": "F-35",
+      "speed": 3000,
+      "fuel_capacity": 6000
+    },
+    {
+      "type": "MiG-29",
+      "speed": 2450,
+      "fuel_capacity": 4500
+    },
+    {
+      "type": "Su-27",
+      "speed": 2500,
+      "fuel_capacity": 5200
+    },
+    {
+      "type": "Eurofighter Typhoon",
+      "speed": 2495,
+      "fuel_capacity": 5600
+    },
+    {
+      "type": "Rafale",
+      "speed": 2130,
+      "fuel_capacity": 4700
+    },
+    {
+      "type": "F/A-18",
+      "speed": 1915,
+      "fuel_capacity": 4900
+    }
+  ]

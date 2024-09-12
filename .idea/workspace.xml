@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6ad5a0c-6323-494e-90b0-d43b86ff622f" name="Changes" comment="init the project and start targets.py class" />
+    <list default="true" id="d6ad5a0c-6323-494e-90b0-d43b86ff622f" name="Changes" comment="init the project and start targets.py class">
+      <change afterPath="$PROJECT_DIR$/filses/aircrafts.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filses/pilots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filses/targets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "yosi-miller"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/yosi-miller/Air_Strike_Simulation_Project.git",
+    "accountId": "d121b8ac-8ee2-43ef-8ece-3777fbd9a22d"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 0
 }]]></component>
@@ -114,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726122135751</updated>
-      <workItem from="1726122152700" duration="6795000" />
+      <workItem from="1726122152700" duration="7430000" />
     </task>
     <task id="LOCAL‎-00001" summary="init the project and start targets.py class">
       <option name="closed" value="true" />
@@ -124,7 +141,23 @@
       <option name="project" value="LOCAL‎" />
       <updated>1726130091909</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎-00002" summary="init the project and start targets.py class">
+      <option name="closed" value="true" />
+      <created>1726130140779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726130140779</updated>
+    </task>
+    <task id="LOCAL‎-00003" summary="init the project and start targets.py class">
+      <option name="closed" value="true" />
+      <created>1726130202224</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726130202224</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
