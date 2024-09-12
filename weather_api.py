@@ -31,8 +31,8 @@ def read_weather(city):
         print(e)
     else:
         time_check = datetime(datetime.now().year, datetime.now().month, datetime.now().day + 1, 00, 00, 00)
-        result = filter(lambda d: d["dt_txt"] == str(time_check), response.json()['list'])
-        return {'main': list(result)[0]['weather'][0]['main']}
+        result = list(filter(lambda d: d["dt_txt"] == str(time_check), response.json()['list']))
+        return {'main': result[0]['weather'][0]['main'], 'clouds': result[0]['clouds']['all'], 'wind':result[0]['wind']['speed']}
 
 
 if __name__ == '__main__':
@@ -40,6 +40,7 @@ if __name__ == '__main__':
     # print(*location)
     weather = read_weather('San Francisco')
     print(weather)
+    # print(weather[0]['clouds']['all'])
     # re = weather["list"]
     # check_data = time_check = datetime(datetime.now().year, datetime.now().month,datetime.now().day + 1,00, 00, 00)
     # for i in re:

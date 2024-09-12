@@ -69,6 +69,12 @@ class Targets:
     def weather_rank(self):
         return self.__weather_rank
 
+    @property
+    def priority(self):
+        return self.__priority
+
+    def __str__(self):
+        return f'{self.__target_city}: {self.__weather_rank}: {self.__weather}: {self.__distance}'
 if __name__ == '__main__':
     iran = Targets('IR', 35.6892523, 51.3896004, 5)
     print(iran.distance)

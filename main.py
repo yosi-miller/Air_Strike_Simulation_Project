@@ -1,8 +1,10 @@
 from models.aircraft import Aircraft
+from models.attack import Attack
 from models.pilots import Pilot
 from models.targets import Targets
 from files_actions import read_json
 from weather_api import read_location
+
 
 def main_menu():
     """
@@ -29,13 +31,35 @@ def main_menu():
                 break
     return
 
+def make_attack(targets, aircrafts, pilots):
+    result = []
+    for target in targets:
+        for pilot in pilots:
+            for aircraft in aircrafts:
+                new_attack = Attack(aircraft, pilot, target)
+                result.append(new_attack)
+
+    return result
 # create targets instance
-# all_targets = [Targets(x['City'], *read_location(x['City']), x['Priority']) for x in read_json('filses/targets.json')]
+all_targets = [Targets(x['City'], *read_location(x['City']), x['Priority']) for x in read_json('filses/targets.json')]
 all_aircraft = [Aircraft(x['type'], x['speed'], x['fuel_capacity']) for x in read_json('filses/aircrafts.json')]
 all_pilots = [Pilot(x['name'], x['skill_level']) for x in read_json('filses/pilots.json')]
+all_attack: list[Attack] = make_attack(all_targets, all_aircraft, all_pilots)
 
 if __name__ == '__main__':
     # main_menu()
     # print([[x.distance, x.city, x.weather, x.weather_rank] for x in all_targets])
-    for f in  all_pilots:
-        print(f)
+    # for f in all_pilots:
+    #     print(f)
+    n = 0
+    for i in all_attack:
+        print(i.rank)
+        n += 1
+    print(n)
+    print(all_attack[0])
+    print(all_attack[10])
+    print(all_attack[1000])
+    print(len(all_attack))
+
+
+
